@@ -1,0 +1,154 @@
+/* CSS RESET */
+
+/* Set box-sizing to border-box for consistent width calculations */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin from all elements */
+* {
+  margin: 0;
+}
+
+/* Set some basic typography styles for the body */
+body {
+  line-height: 1.5;
+  font-family: sans-serif; /* Choose your preferred default font */
+}
+
+/* Make images responsive by default */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove default padding and margin from headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+/* Normalize font weight for headings (optional) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal; /* Removes default bold weight */
+}
+
+body {
+  background: linear-gradient(
+    135deg,
+    hsla(0, 0%, 55%, 0.791),
+    rgb(37, 76, 216)
+  );
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#weather-container {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+h2,
+label,
+p {
+  color: #fff;
+  margin: 8px 0;
+}
+
+input {
+  width: calc(100% -16px);
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+button {
+  background: hsla(350, 56%, 79%, 0.3);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100px;
+  font-size: 15px;
+}
+button:hover {
+  background: rgb(235, 56, 86);
+}
+
+#temp-div {
+  font-size: 60px;
+  margin-top: -30px;
+}
+
+#weather-info {
+  font-size: 20px;
+}
+#weather-icon {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 10px;
+  margin-bottom: 0;
+  display: none;
+}
+
+#hourly-forecast {
+  margin-top: 50px;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+}
+.hourly-item {
+  flex: 0 0 auto;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  color: white;
+}
+
+.hourly-item img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+#hourly-heading {
+  color: #fff;
+  margin-top: 10px;
+}
